@@ -74,7 +74,6 @@ export default function Navbar() {
           <DropdownMenu
             open={isOpen}
             onOpenChange={setOpen}
-            className="md:hidden"
           >
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon">

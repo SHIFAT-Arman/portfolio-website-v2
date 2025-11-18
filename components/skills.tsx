@@ -16,6 +16,23 @@ import KerasOriginal from "devicons-react/lib/icons/KerasOriginal";
 import MatplotlibOriginal from "devicons-react/lib/icons/MatplotlibOriginal";
 import AnacondaOriginalWordmark from "devicons-react/lib/icons/AnacondaOriginalWordmark";
 
+type IconName =
+  | "CplusplusPlain"
+  | "JavaOriginalWordmark"
+  | "OracleOriginal"
+  | "JavascriptOriginal"
+  | "ReactOriginalWordmark"
+  | "NodejsOriginalWordmark"
+  | "NextjsOriginalWordmark"
+  | "PythonOriginalWordmark"
+  | "PandasPlainWordmark"
+  | "NumpyOriginalWordmark"
+  | "LinuxOriginal"
+  | "TensorflowOriginal"
+  | "KerasOriginal"
+  | "MatplotlibOriginal"
+  | "AnacondaOriginalWordmark";
+
 const iconsMap = {
   CplusplusPlain,
   JavaOriginalWordmark,
@@ -32,9 +49,9 @@ const iconsMap = {
   KerasOriginal,
   MatplotlibOriginal,
   AnacondaOriginalWordmark,
-};
+} as const;
 
-const skillsData = [
+const skillsData: { icon: IconName; size: number; bgClass: string }[] = [
   { icon: "CplusplusPlain", size: 60, bgClass: "p-8 sm:p-10" },
   { icon: "JavaOriginalWordmark", size: 60, bgClass: "p-6 sm:p-10" },
   { icon: "OracleOriginal", size: 80, bgClass: "p-6 sm:p-10" },
@@ -48,7 +65,6 @@ const skillsData = [
   { icon: "LinuxOriginal", size: 70, bgClass: "p-6 sm:p-10" },
   { icon: "TensorflowOriginal", size: 70, bgClass: "p-6 sm:p-10" },
   { icon: "KerasOriginal", size: 70, bgClass: "p-6 sm:p-10" },
-
   { icon: "MatplotlibOriginal", size: 70, bgClass: "p-6 sm:p-10" },
   { icon: "AnacondaOriginalWordmark", size: 70, bgClass: "p-6 sm:p-10" },
 ];

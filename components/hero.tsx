@@ -1,5 +1,6 @@
 "use client";
 import { TypeAnimation } from "react-type-animation";
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
@@ -40,6 +41,21 @@ export default function Hero() {
                   preRenderFirstString={true}
                 />
               </h2>
+              <div className="mt-10">
+                <a
+                  href="/CV_Shifat_Arman.pdf"
+                  download
+                  className="inline-block"
+                >
+                  <Button
+                    variant="secondary"
+                    size="lg"
+                    className="bg-white text-gray-900 hover:bg-gray-200"
+                  >
+                    Download Resume
+                  </Button>
+                </a>
+              </div>
               <p className="mt-6 text-lg leading-8 text-gray-300 italic">
                 keywords: Machine-Learning, Deep-Learning, Natural Language
                 Processing (NLP), Artificial Intelligence, Web Development,
